@@ -1,4 +1,4 @@
-function greet();{
+function greet(){
   let message = "HAVE A GOOD DAY";
   console.log(message);
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body{
+            background-color: burlywood;
+            margin: 30px;
+        }
+  h1{
+    text-align: center;
+    color: brown;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 50px;
+  }
+    </style>
+</head>
+<body>
+   <h1>Expense Tracker</h1> 
+   <input type="type" id="expenseName" placeholder="Expense name">
+   <input type="number" id="expenseAmount" placeholder="Amount">
+   <button onclick="addExpense()">Add Expense</button>
+
+   <ul id="expenseList"></ul>
+   <h3> Total: $<span id="total">0</span></h3>
+
+   <script>
+    let expense= [];
+    let total= 0;
+    function addExpense(){
+let name=document.getElementById("expenseName").value;
+let amount=parseInt(document.getElementById("expenseAmount").value);
+
+if(name && amount){
+    expense.push({name,amount});
+    total+=amount;
+
+    let list=document.getElementById("expenseList");
+    let li=document.createElement("li");
+    li.textContent= `${name} - $${amount}`;
+    list.appendChild(li);
+    document.getElementById("total").textContent=total;
+    document.getElementById("expenseName").value="";
+    document.getElementById("expenseAmount").value="";
+}
+    }
+   </script>
+</body>
+</html>

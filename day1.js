@@ -1,38 +1,38 @@
-let numbers =["1","2","3","4"];
-let doubled= numbers.map(function(num){
+let numbers1 =["1","2","3","4"];
+let doubled= numbers1.map(function(num){
   return num*2
 });
 console.log(doubled);
-console.log(numbers);
+console.log(numbers1);
 
-let numbers = ["1","2","3","4"];
-let squared = numbers.map( num => num * num);
+let numbers2 = ["1","2","3","4"];
+let squared = numbers2.map( num => num * num);
 console.log(squared);
 
-let number=[1,2,3,4,5,6];
-let evens=number.filter(function(num){
+let number3=[1,2,3,4,5,6];
+let evens=number3.filter(function(num){
   return num% 2===0;
 })
 console.log(evens);
-console.log(number);
+console.log(number3);
 
-let number=[1,2,3,4,5];
-let greaterthantwo=number.filter(num => num > 2);
+let number4=[1,2,3,4,5];
+let greaterthantwo=number4.filter(num => num > 2);
 console.log(greaterthantwo);
 
-let fruits=["apple","banana","avacado","mango"];
-let aFruits=fruits.filter((fruits,index,arr) => {
-  return fruits.startWith("a");
+let fruits1=["apple","banana","avacado","mango"];
+let aFruits=fruits1.filter((fruits,index,arr) => {
+  return fruits1.startWith("a");
 });
 console.log(aFruits);
 
-let numbers=[7,3,34,89];
-let sum = numbers.reduce(function(accumulator,currentValue){
+let numbers5=[7,3,34,89];
+let sum1= numbers5.reduce(function(accumulator,currentValue){
   return accumulator + currentValue;
 },0);
 console.log(sum);
 
-let sum=[10,23,500,781].reduce((acc,curr)=> acc+curr,0);
+let sum2=[10,23,500,781].reduce((acc,curr)=> acc+curr,0);
 console.log(sum);
 
 let number=[13,67,90,634];
@@ -41,28 +41,28 @@ let max=number.reduce((acc,curr)=>{
 },number[0]);
 console.log(max);
 
-let fruits=["apple","avacado","banana","kiwi"];
-fruits.forEach(function(fruit,index){
+let fruits2=["apple","avacado","banana","kiwi"];
+fruits2.forEach(function(fruit,index){
   console.log(fruit,index);
 });
 
-let fruits=["apple","kiwi","mango","blurberry"];
-fruits.forEach((fruit,index)=>{
+let fruits3=["apple","kiwi","mango","blurberry"];
+fruits3.forEach((fruit,index)=>{
   console.log(`${index+1}:${fruit}`);
 });
 
-let numbers=[1,2,3,4,5,6];
-numbers.forEach((num,index,arr)=>{
+let numbers6=[1,2,3,4,5,6];
+numbers6.forEach((num,index,arr)=>{
   console.log(`value:${num}, Index:${index},full arrey:${arr}`);
 });
 
-let numbers=[23,54,21,5,9,203];
-numbers.sort((a,b)=>a-b);
-console.log(numbers);
+let numbers7=[23,54,21,5,9,203];
+numbers7.sort((a,b)=>a-b);
+console.log(numbers7);
 
-let numbers=[24,67,12,89,01,51];
-numbers.sort((a,b)=>b-a);
-console.log(numbers);
+let numbers8=[24,67,12,89,1,51];
+numbers8.sort((a,b)=>b-a);
+console.log(numbers8);
 
 let cars=["alto","volvo","bmw","creta","ferrari"];
 cars.sort((a,b) => a.localeCompare(b));
@@ -88,18 +88,18 @@ for(let char of "ABCD"){
 }
 
 let numbers=[5,2,6,1,8,9];
-let result=numbers
+let result1=numbers
 .filter(num => num=>4)
 .map(num=> num *2)
 .sort((a,b)=>a-b);
-console.log(result);
+console.log(result1);
 
 let words=[" iphone   ","   samsung","   realme ","vivo "];
-let result= words
+let result2= words
 .map(word=>word.trim())
 .filter(word=>word.length >6)
 .map(word=> word.toUpperCase())
-console.log(result);
+console.log(result2);
 
 let students=[
   {name:"zia", marks:80},
